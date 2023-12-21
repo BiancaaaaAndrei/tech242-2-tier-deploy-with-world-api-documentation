@@ -18,6 +18,7 @@ sudo apt install mysql-server
 ```
 sudo service mysql status
 ```
+![Status](<project/mysql status.png>)
 
 ## Step 4. Download SQL from Repository
 ```
@@ -50,6 +51,8 @@ sudo mysql -h localhost -P 3306 -u root -p
 
 ```sudo sed -i 's/^bind-address\s*=\s*127\.0\.0\.1/bind-address = 0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf```
 
+![Any address connection](<project/allow connections from any address.png>)
+
 ## Step 9. Restart MySQL Service
 
 ```sudo service mysql restart```
@@ -64,6 +67,8 @@ sudo mysql -h localhost -P 3306 -u root -p
 ```sudo mysql -u root -p -e "CREATE USER 'root'@'%' IDENTIFIED BY 'root';"```
 
 ```sudo mysql -u root -p -e "ALTER USER 'root'@'%' IDENTIFIED BY 'root';"```
+
+![Create user](<project/create user.png>)
 
 
 ## Step 12. Grant All Privileges

@@ -29,11 +29,14 @@ This section outlines the steps to create another virtual machine, connect it to
 ```export DB_USER=root```
 ```export DB_PASS=root```
 
+
 ## Step 19. Verify Environment Variables
 
 ```echo $DB_HOST```
 ```echo $DB_USER```
 ```echo $DB_PASS```
+
+![Variables](project/variables.png)
 
 ## Step 20. Maven Configuration
 If using sudo for Maven commands, preserve environment variables:
@@ -41,6 +44,9 @@ If using sudo for Maven commands, preserve environment variables:
 ```sudo apt-get update```
 ```sudo DEBIAN_FRONTEND=noninteractive apt-get install maven -y```
 ```sudo -E mvn clean install```
+
+![Error](<project/failure in loading the application context during the testing phase.png>)
+
 If encountering issues during testing, consider to:
 
 1. Check Test Class and Configuration: Ensure the CountryLanguageTests test class is annotated with @SpringBootTest and has correct configurations.
