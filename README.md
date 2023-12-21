@@ -55,3 +55,7 @@ This repository documents the deployment process for a 2-tier application on AWS
 ### 4. AMI Instances
 
 Tutorial [AMI Instance](ami.md)
+
+## Final product:
+
+![Final product](project/final.png)
