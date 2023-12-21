@@ -42,9 +42,16 @@ This repository documents the deployment process for a 2-tier application on AWS
 
 ### 2. Automation on AWS
 
-[Database Script](App_Code.md)
-[App Code Script](App_Code.md)
+- [Database Script](App_Code.md)
+- [App Code Script](App_Code.md)
 
 ### 3. User Data on AWS
 
+- Both machines were then automated via user data.
+- Handling user data became a seamless process for my logic tier.
+- Method: copy and paste my script for the specific VM
+- For the Application VM made sure that the Public IP address from the database machine was correct in order to succesfuly connect with the MySQL database. 
+  
 ### 4. AMI Instances
+
+Tutorial [AMI Instance](ami.md)
